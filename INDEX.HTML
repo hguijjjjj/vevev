@@ -1,0 +1,68 @@
+<html><head>
+    <title>પિંગ પૉંગ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+ 
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script><style type="text/css" data-glamor=""></style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>   
+
+<style type="text/css">
+@font-face {
+font-weight: 400;
+font-style:  normal;
+font-family: circular;
+
+src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Book.woff2') format('woff2');
+}
+
+@font-face {
+font-weight: 700;
+font-style:  normal;
+font-family: circular;
+
+src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Bold.woff2') format('woff2');
+}</style></head>
+<body background="background1.jpg">
+    <center>
+        <div class="btn btn-warning heading">
+            <h3>એઆઈ પિંગ પૉંગ ગેમ</h3>
+            <button class="btn btn-warning" data-toggle="modal" data-target="#my_modal">સૂચનાઓ</button>
+        </div>
+        <button class="btn btn-success" id="start_button" onclick="start()">રમત રમો</button>
+        <br>
+        <h3 id="status" class="btn btn-danger"></h3>
+        <br><br>
+        <div id="canvas"><canvas id="defaultCanvas0" class="p5Canvas" width="1400" height="1200" style="width: 700px; height: 600px;"></canvas></div>
+        <br><br>
+        <button id="restart_button" class="btn btn-danger" onclick="restart()">પુનઃપ્રારંભ કરો</button>
+        <br>
+        <div id="my_modal" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal">×</button>
+                        <h3>સૂચનાઓ</h3>
+                    </div>
+                    <div class="modal-body">
+                        <ol>
+                            <li>પહેલા તમારા લેપટોપની સ્ક્રીનને સીધી રાખો</li>
+                            <li>તમારી જાતને લેપટોપથી લગભગ 3-4 ફૂટ દૂર ખસેડો</li>
+                            <li>તમારા જમણા કાંડાને ચડતી અને ઉતરતી રીતે ખસેડો, તમારા જમણા કાંડા પર લાલ ટપકું દેખાવું જોઈએ</li>
+                            <li>હવે પ્લે બટન દબાવો, અને ફરીથી તમારી જાતને લેપટોપથી 3-4 ફૂટ દૂર ખસેડો</li>
+                            <li>લાલ ચપ્પુ એ તમારા ચપ્પુ છે, જે તમારા જમણા કાંડાની હિલચાલ મુજબ આગળ વધશે</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h4 class="footer">
+            દ્વારા વિકસિત: વ્હાઇટહાટ જેઆર ટીમ
+        </h4>
+    </center>
+    <script src="main.js"></script>
+
+<div id="loom-companion-mv3" ext-id="liecbddmkiiihnedobmlmillhodjkdmb"><section id="shadow-host-companion"></section></div><video playsinline="" crossorigin="anonymous" width="700" height="600" style="width: 700px; height: 600px; display: none;"></video></body></html>
